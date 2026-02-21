@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kore-stack"
+version = "0.1.0"
+description = "Complete cognitive middleware stack for LLMs. Memory + routing + cache + observability in one install."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "iafiscal" },
+]
+keywords = ["llm", "memory", "identity", "cognitive", "ai", "routing", "cache", "middleware"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "kore-mind>=0.2.1",
+    "kore-bridge>=0.2.1",
+    "sc-router>=0.2.0",
+]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.20"]
+all = ["openai>=1.0", "anthropic>=0.20"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kore_stack"]
