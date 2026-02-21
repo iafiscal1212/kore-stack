@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "kore-stack"
-version = "0.1.0"
+version = "0.1.1"
 description = "Complete cognitive middleware stack for LLMs. Memory + routing + cache + observability in one install."
 readme = "README.md"
 license = "MIT"
@@ -21,8 +21,8 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
-    "kore-mind>=0.2.1",
-    "kore-bridge>=0.2.1",
+    "kore-mind>=0.3.1",
+    "kore-bridge>=0.3.1",
     "sc-router>=0.2.0",
 ]
 

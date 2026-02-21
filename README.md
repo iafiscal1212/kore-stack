@@ -27,6 +27,11 @@ bridge = Bridge(mind=mind, llm=llm, cache_ttl=3600.0)
 response = bridge.think("Help me with my proof", user="carlos")
 ```
 
+## What's new in v0.1.1
+
+- `kore-mind>=0.3.1`: optimized Ollama embeddings — connection reuse, LRU cache, batch embedding (`embed.batch(texts)`), fallback warnings
+- `kore-bridge>=0.3.1`: dependency bump
+
 ## What's in the stack
 
 ### kore-mind — Persistent memory engine

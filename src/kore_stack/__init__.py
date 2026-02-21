@@ -17,7 +17,7 @@ from kore_bridge import (
 )
 from sc_router import ToolCatalog, Tool, route
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __all__ = [
     # Mind
     "Mind", "Memory", "Identity", "MemoryType", "Trace", "CacheEntry",
