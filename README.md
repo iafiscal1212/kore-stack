@@ -27,9 +27,14 @@ bridge = Bridge(mind=mind, llm=llm, cache_ttl=3600.0)
 response = bridge.think("Help me with my proof", user="carlos")
 ```
 
-## What's new in v0.1.1
+## What's new in v0.1.2
 
-- `kore-mind>=0.3.1`: optimized Ollama embeddings — connection reuse, LRU cache, batch embedding (`embed.batch(texts)`), fallback warnings
+- `kore-mind>=0.4.0`: persistent SQLite embedding cache, float16 quantization, async embeddings (`ollama_embed_async`), streaming batch (`stream_batch` / `astream_batch`), dimension validation in `cosine_similarity`
+- `kore-bridge>=0.3.2`: dependency bump
+
+## v0.1.1
+
+- `kore-mind>=0.3.1`: optimized Ollama embeddings — connection reuse, LRU cache, batch embedding, fallback warnings
 - `kore-bridge>=0.3.1`: dependency bump
 
 ## What's in the stack
